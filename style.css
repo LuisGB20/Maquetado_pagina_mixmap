@@ -1,0 +1,806 @@
+/*Este es el estilo de la pagina en general*/
+body {
+    background-color: white;
+    margin: 0%;
+    font-family: 'Nunito', sans-serif;
+    font-family: 'Oswald', sans-serif;
+}
+
+/*Este es el estilo del header en general*/
+.barra_navegacion{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #0B2447;
+    justify-content: space-between;
+    height: 75px;
+
+}
+
+
+/*Este es el estilo de la barra de navegacion de la izquierda*/
+.nav_izq{
+    cursor: pointer;
+    display: flex;
+    height: 100%;
+    align-items: center;
+}
+
+.nav_izq a i{
+    font-size: 30px;
+    transition: 0.5s;
+}
+
+.nav_izq a{
+    margin-left: 20px;
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    transition: 0.5s;
+}
+
+/* animicion hover */
+.nav_izq a i:hover{
+    transform: scale(1.4);
+}
+.nav_izq a:hover{
+    background-color: white;
+    color: #0B2447;
+    border-radius: 10px;
+}
+/*Este es el estilo de la barra de navegacion de la derecha*/
+.nav_der{
+    list-style: none;
+    display: flex;
+    justify-content: right;
+    height: 100%;
+    align-items: center;
+}
+
+.nav_der li{
+    display: inline-block;
+    padding: 0px 20px ;
+    transition: 0.4s;
+}
+
+.nav_der a{
+    text-decoration: none;
+    color: white;
+    transition: 0.4s;
+}
+
+.nav_der ul li select{
+    background-color: #0B2447;
+    color: #FFFF;
+    border: #0B2447;
+    border-right: 20px;
+    outline: none;
+    transition: 0.1s;
+}
+
+/* animaciones hover */
+.nav_der ul li:hover{
+    background-color: white;
+    border-radius: 20px;
+}
+.nav_der a:hover{
+    color: #0B2447;
+}
+
+.nav_der ul li select:hover{
+    background-color: white;
+    color: #0B2447;
+}
+
+/*Esto es el menú del header*/
+
+.menu_header{
+    width: 100%;
+    background-image: url(./media/Fondo_header.jpg);
+    background-size: cover;
+    height: 600px;
+    background-position: center;
+
+}
+
+.menu_header a img{
+    width: 100%;
+    transition: 0.5s;
+}
+
+.topbar{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    padding: 0 50px;
+    box-sizing: border-box;
+}
+
+.topbar_list{
+    width: 100%;
+    padding: 20px 50px;
+    align-items: center;
+    list-style: none;
+}
+
+.topbar_list li a{
+    font-family: 'Lilita One', sans-serif;
+    color: white;
+    text-decoration: none;
+    align-items: center;
+    font-size: 20px;
+    width: 10%;
+    margin: 20px;
+    padding: 10px;
+    transition: 0.4s;
+}
+
+/* animacion hover */
+.menu_header a img:hover{
+    transform: scale(1.4);
+}
+
+.topbar_list li:hover{
+    background-color: white;
+    border-radius: 20px;
+}
+
+.topbar_list li a:hover{
+    color: #0B2447;
+}
+/* Elementos de lista que esta dentro de la lista principal */
+
+
+.topbar_list> li{
+    float: left;
+}
+
+.topbar_list li ul{
+    display: none;
+    position: absolute;
+}
+
+/*Esta es la bolsita de compras*/
+#bolsa_compras{
+    font-size: 30px;
+    color: white;
+}
+
+/*Esto es el boton de busqueda*/
+.buscar{
+    display: flex;
+    margin: 20px;
+}
+
+.buscar input{
+    background-color: #FFFF;
+    width: 0px;
+    height: 40px;
+    font-size: 18px;
+    border: 1px solid silver;
+    outline: none;
+    padding: 0 20px;
+    border-radius: 30px;
+    color: black;
+    transition: all 0.6s ease;
+}
+
+.boton_buscador a i{
+    font-size: 30px;
+    color: white;
+}
+
+ .boton_buscador{
+    position: relative;
+    left: -45px;
+    background: #0B2447;
+    width: 50px;
+    height: 50px;
+    line-height: 55px;
+    text-align: center;
+    font-size: 20px;
+    color: white;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.buscar:hover input{
+    width: 240px;
+} 
+
+/*Esto es la parte del titulo y subtitulo*/
+#hola{
+    text-align: left;
+    font-size: 60px;
+    padding: 0 20px;
+    margin: 40px 0 0 0;
+    font-family: 'Nunito', sans-serif;
+    color: white;
+}
+
+#pregunta_eslogan{
+    text-align: left;
+    margin-top: 0;
+    font-size: 25px;
+    padding: 0 0 0 20px;
+    font-family: 'Nunito', sans-serif;
+    color: white;
+}
+
+/*Esto es el nav del menu de filtro*/
+.lista_principal {
+    list-style: none;
+    padding: 50px 0 0 0;
+    margin: 0 0 0 40px;
+    text-align: left;
+  }
+
+  .lista_principal li{
+    display: inline-block;
+    background-color: #0B2447;
+    padding: 5px 20px;
+    border-radius: 15px 15px 0px 0px;
+    transition: 0.4s;
+  }
+
+  .lista_principal li a{
+    color: white;
+    text-decoration: none;
+    transition: 0.4s;
+}
+
+.lista_principal li:hover{
+    background-color: #19A7CE;
+}
+.lista_principal li a:hover{
+    color: white;
+}
+
+/*Esto es el menu de filtro*/
+.menu_central{
+    display: flex;
+    background-color: white;
+    width: 96%;
+    height: 110px;
+    margin: 0 2% 30px 2%;
+    padding: 0;
+    border-radius: 20px;
+}
+
+/*Destination*/
+.destination{
+    display: flex;
+    justify-content: center;
+    width: 25%;
+    height: 90px;
+    margin: 10px 0;
+    text-align: center;
+    align-items: center;
+    border-right: 1px solid gray;
+}
+
+.destination i{
+    width: 25%;
+    font-size: 40px;
+}
+
+.destination_info{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.destination p, label{
+    height: 50%;
+}
+
+.destination p{
+    color: #19A7CE;
+    margin: 0;
+}
+
+/*Check*/
+.check{
+    display: flex;
+    justify-content: center;
+    width: 25%;
+    height: 90px;
+    margin: 10px 0;
+    text-align: center;
+    align-items: center;
+    border-right: 1px solid gray;
+}
+
+.check i{
+    width: 25%;
+    font-size: 40px;
+}
+
+.check .check_info{
+    width: 75%;
+    height: 90px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center
+}
+
+.check p, label{
+    height: 25%;
+}
+
+.check p{
+    color: #19A7CE;
+    margin: 0;
+}
+
+/*guests*/
+.guests{
+    display: flex;
+    justify-content: center;
+    width: 25%;
+    height: 90px;
+    margin: 10px 0;
+    text-align: center;
+    align-items: center;
+    border-right: 1px solid gray;
+}
+
+.guests i{
+    width: 25%;
+    font-size: 40px;
+}
+
+.guests .guests_info{
+    width: 50%;
+    height: 90px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center
+}
+
+.guests p, label{
+    height: 25%;
+}
+
+.guests p{
+    color: #19A7CE;
+    margin: 0;
+}
+
+/*Advance*/
+.advance{
+    display: flex;
+    justify-content: center;
+    width: 25%;
+    height: 90px;
+    margin: 10px 0;
+    text-align: center;
+    align-items: center;
+}
+
+.advance .advance_info{
+    width: 50%;
+    height: 90px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center
+}
+
+.advance_info p{
+    color: #19A7CE;
+    margin: 0;
+}
+
+.advance_info h4{
+    margin: 0;
+    font-weight: 100;
+}
+
+#search_advance, #search_advance a{
+    width: 25%;
+    height: 40px;
+    color: white;
+    background-color: #19A7CE;
+    border-radius: 10px;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+
+/*Seccion 1 - Ofertas*/
+.ofertas{
+    width: 100%;
+    display: flex;
+    height: 500px;
+    margin: 20px 0 0 0;
+}
+
+/*banner 1*/
+.seccion_ofertas_banner1{
+    background-image: url(./media/image_banner_1.jpg);
+    background-size: cover;
+    width: 50%;
+    height: absolute;
+    margin: 10px;
+    text-align: center;
+    border-radius: 20px;
+}
+
+.titulo a{
+    font-family: 'Nunito', sans-serif;
+    color: white;
+    text-decoration: none;
+}
+
+.titulo{
+    align-items: center;
+    margin: 40px;
+    background-color: #E76161;
+    border-radius: 20px 20px;
+    text-align: center;
+}
+
+.seccion_ofertas_banner1 p{
+    height: auto;
+    margin: 20px 10px;
+    font-family: 'Nunito', sans-serif;
+    font-size: 20px;
+    color: white;
+}
+.seccion_ofertas_banner1 h2:not(.titulo){
+    height: auto;
+    margin: 10px 10px;
+    font-family: 'Nunito', sans-serif;
+    font-size: 30px;
+    color: white;
+}
+
+
+.see_deals{
+    height: auto;
+    margin: 60px 20px;
+    align-items: center;
+}
+
+.see_deals a{
+    border: 2px solid white;
+    padding: 10px 30px;
+    text-decoration: none;
+    border-radius: 10px 10px 10px 10px;
+    color: white;
+    transition: 0.5s;
+}
+
+/* animacion hover */
+.see_deals a:hover{
+    background-color: white;
+    color: #0B2447;
+}
+
+/*Banner 2*/
+.seccion_ofertas_banner2{
+    background-image: url(./media/image_banner_2.jpg);
+    background-size: cover;
+    height: absolute;
+    width: 25%;
+    margin: 10px;
+    text-align: center;
+    border-radius: 20px;
+}
+
+.seccion_ofertas_banner2 p{
+    height: auto;
+    margin: 20px 10px;
+    font-family: 'Nunito', sans-serif;
+    font-size: 20px;
+    color: white;
+}
+.seccion_ofertas_banner2 h2:not(.titulo){
+    height: auto;
+    margin: 10px 10px;
+    font-family: 'Nunito', sans-serif;
+    font-size: 30px;
+    color: white;
+}
+
+/*Banner 3*/
+.seccion_ofertas_banner3{
+    background-image: url(./media/image_banner_3.jpg);
+    background-size: cover;
+    height: absolute;
+    width: 25%;
+    margin: 10px;
+    text-align: center;
+    border-radius: 20px;
+}
+
+.seccion_ofertas_banner3 p{
+    height: auto;
+    margin: 20px 10px;
+    font-family: 'Nunito', sans-serif;
+    font-size: 20px;
+    color: white;
+}
+.seccion_ofertas_banner3 h2:not(.titulo){
+    height: auto;
+    margin: 10px 10px;
+    font-family: 'Nunito', sans-serif;
+    font-size: 30px;
+    color: white;
+}
+
+/*Seccion 2 - Top destinations*/
+/* titulo */
+#top_destinations_titulo{
+    font-size: 50px;
+    color: #212A3E;
+    text-align: center;
+    align-items: center;
+    font-family: 'Nunito', sans-serif;
+}
+
+/* seccion 3 - tarjetas */
+/*Tarjetas*/
+.tarjetas-container {
+    display: flex;
+    width: 100%;
+    height: 800px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+.tarjetas{
+    width: calc(33.33% - 20px);
+    height: calc(50% - 20px);
+    margin: 0 10px 0 10px;
+    display: flex;
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    justify-content: center;
+    text-align: center;
+    align-items: end;
+}
+
+.info_tarjetas{
+    margin: 10px;
+    position: absolute;
+    text-align: center;
+    z-index: 1;
+}
+
+.info_tarjetas{
+    font-size: 20px;
+}
+
+.tarjetas .info_tarjetas a{
+    font-size: 21px;
+    color: white;
+    text-decoration: none;
+}
+
+.tarjetas img{
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    transition: 0.7s;
+}
+
+.tarjetas img:hover{
+    transform: scale(1.2);
+}
+
+/* footer */
+/*-----parte 1----------*/
+.footer_parte_1{
+    background-color: #D8D8D8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+}
+
+.zona_registro_izq{
+    align-items: center;
+    display: flex;
+    padding: 0 100px;
+}
+
+.zona_registro_izq a{
+    padding: 0 20px;
+}
+
+.zona_registro_izq h4, p{
+    padding: 0;
+    margin: 0;
+}
+
+.registro_der{
+    align-items: center;
+    display: flex;
+    padding: 0 100px;
+}
+
+form{
+    position: relative;
+    display: flex;
+    box-sizing: border-box;
+    padding: 0 20px;
+}
+
+.registro_der #registro{
+    background-color: #FFFF;
+    width: 400px;
+    height: 50px;
+    border: none;
+    outline: none;
+    padding: 0 10px;
+    border-radius: 20px 0 0 20px;
+}
+
+.registro_der #boton{
+    color: #FFFF;
+    left: -5px;
+    background-color: #19A7CE;
+    border-radius: 0 20px 20px 0;
+    width: 120px;
+    height: 50px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.zona_registro_izq i{
+    font-size: 100px;
+    color: white;
+    margin: 0 20px;
+}
+
+.registro_der #boton:hover{
+    background-color: #0B2447;
+    color: white;
+}
+
+/* ----- Footer parte 2 ------ */
+.footer_parte_2{
+    background-color: white;
+    display: flex;
+    list-style: none;
+    align-items: center;
+    height: 500px 500px;
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+    justify-content: center;
+}
+
+.footer_parte_2 ul{
+    padding: 0;
+}
+
+.footer_parte_2 ul li{
+    list-style: none;   
+    color: #2C3639;
+    padding-bottom: 15px;
+}
+
+.footer_parte_2 ul li a{
+    list-style: none;   
+    color: #2C3639;
+    text-decoration: none;
+}
+
+.footer_parte_2 h3{
+    color: #2C3639;
+    font-size: 20px;
+    margin-bottom: 25px;
+    border-bottom: 1px solid #2C3639;
+    text-align: left;
+}
+
+.footer_parte_2 h4{
+    color: #2C3639;
+    font-size: 20px;
+    margin-bottom: 25px;
+}
+
+/* seccion 1 */
+.footer_parte_2 .seccion_1{
+    align-items: center;
+    width: 200px;
+    height: 400px;
+    padding: 25px 25px;
+}
+
+.footer_parte_2 .seccion_1 h4{
+    padding: 0 0 5px 0;
+    margin: 0;
+}
+
+.seccion_1 p a{
+    padding: 0 0 15px 0;
+    margin: 0;
+    text-decoration: none;
+    color: #2C3639;
+}
+
+.seccion_1 p{
+    margin: 0 0 15px 0;
+}
+
+.seccion_1 a i{
+    font-size: 40px;
+    margin: 0 10px;
+    color: #2C3639;
+    transition: 0.5s;
+}
+
+.seccion_1 a i:hover{
+    transform: scale(1.4);
+}
+/* seccion 2 */
+.footer_parte_2 .seccion_2{
+    align-items: center;
+    width: 200px;
+    height: 400px;
+    padding: 25px 25px;
+}
+
+/* seccion 3 */
+.footer_parte_2 .seccion_3{
+    align-items: center;
+    width: 200px;
+    height: 400px;
+    padding: 25px 25px;
+    
+}
+
+/* seccion 4 */
+.footer_parte_2 .seccion_4{
+    align-items: center; 
+    text-align: left;
+    width: 200px;
+    height: 400px;
+    padding: 25px 25px;
+}
+
+.footer_parte_2 .seccion_4 select{
+    background-color: #2C3639;
+    color: white;
+    border-radius: 6px;
+    border-color: white;
+    border-right: 0 20px 0 0;
+}
+
+/*Footer parte 3*/
+.footer_parte_3{
+    border-top: 1px solid #363d3f;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+}
+
+.tarjetas_der{
+    padding: 0 50px;
+}
+
+.parrafo_izq {
+    display: flex;
+    padding: 0 50px;
+}
+
+.parrafo_izq a{
+    color: #2C3639;
+    text-decoration: none;
+}
+
+.tarjetas_der img{
+    width: 40px;
+}
