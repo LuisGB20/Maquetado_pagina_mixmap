@@ -1,4 +1,4 @@
-/*Este es el estilo de la pagina en general*/
+/*Estilo general de la pagina*/
 body {
     background-color: white;
     margin: 0%;
@@ -6,22 +6,18 @@ body {
     font-family: 'Oswald', sans-serif;
 }
 
-/*Este es el estilo del header en general*/
+/*Estilo general de la barra de navegación*/
 .barra_navegacion{
     display: flex;
     flex-wrap: wrap;
     background-color: #0B2447;
     justify-content: space-between;
-    height: 75px;
-
+    height: 55px;
 }
 
-
-/*Este es el estilo de la barra de navegacion de la izquierda*/
+/*Estilo de la barra de navegacion lado izquierdo*/
 .nav_izq{
-    cursor: pointer;
     display: flex;
-    height: 100%;
     align-items: center;
 }
 
@@ -38,7 +34,7 @@ body {
     transition: 0.5s;
 }
 
-/* animicion hover */
+/*animacion de la barra de navegación del lado izquierdo*/
 .nav_izq a i:hover{
     transform: scale(1.4);
 }
@@ -47,12 +43,8 @@ body {
     color: #0B2447;
     border-radius: 10px;
 }
-/*Este es el estilo de la barra de navegacion de la derecha*/
+/*Estilo de la barra de navegacion lado derecho*/
 .nav_der{
-    list-style: none;
-    display: flex;
-    justify-content: right;
-    height: 100%;
     align-items: center;
 }
 
@@ -68,7 +60,7 @@ body {
     transition: 0.4s;
 }
 
-.nav_der ul li select{
+.nav_der li select{
     background-color: #0B2447;
     color: #FFFF;
     border: #0B2447;
@@ -77,7 +69,7 @@ body {
     transition: 0.1s;
 }
 
-/* animaciones hover */
+/*animacion de la barra de navegación del lado derecho*/
 .nav_der ul li:hover{
     background-color: white;
     border-radius: 20px;
@@ -91,50 +83,58 @@ body {
     color: #0B2447;
 }
 
-/*Esto es el menú del header*/
-
+/*Esto es el menú principal del header*/
 .menu_header{
     width: 100%;
-    background-image: url(./media/Fondo_header.jpg);
+    background-image: url(./media/Fondo_header.jpg);        /*Esta es la imagen del fondo*/
     background-size: cover;
     height: 600px;
     background-position: center;
-
 }
 
+/*Este es el logo*/
 .menu_header a img{
     width: 100%;
     transition: 0.5s;
 }
 
+/*Esta es la barra del menu navegación*/
 .topbar{
     display: flex;
     width: 100%;
     align-items: center;
-    padding: 0 50px;
+    padding: 0 20px;
     box-sizing: border-box;
 }
 
 .topbar_list{
     width: 100%;
-    padding: 20px 50px;
+    padding: 20px 20px;
     align-items: center;
     list-style: none;
 }
 
 .topbar_list li a{
-    font-family: 'Lilita One', sans-serif;
+    font-weight: 500;
     color: white;
     text-decoration: none;
     align-items: center;
     font-size: 20px;
     width: 10%;
     margin: 20px;
-    padding: 10px;
     transition: 0.4s;
 }
 
-/* animacion hover */
+.topbar_list> li{
+    float: left;
+}
+
+.topbar_list li ul{
+    display: none;
+    position: absolute;
+}
+
+/*Animacion hover de la barra de navegación del menu*/
 .menu_header a img:hover{
     transform: scale(1.4);
 }
@@ -147,17 +147,6 @@ body {
 .topbar_list li a:hover{
     color: #0B2447;
 }
-/* Elementos de lista que esta dentro de la lista principal */
-
-
-.topbar_list> li{
-    float: left;
-}
-
-.topbar_list li ul{
-    display: none;
-    position: absolute;
-}
 
 /*Esta es la bolsita de compras*/
 #bolsa_compras{
@@ -165,47 +154,67 @@ body {
     color: white;
 }
 
-/*Esto es el boton de busqueda*/
-.buscar{
-    display: flex;
+/*Este es el boton de la barra de navegación del header*/
+.topbar button{
+    background-color: #FFB84C;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
     margin: 20px;
-}
-
-.buscar input{
-    background-color: #FFFF;
-    width: 0px;
-    height: 40px;
-    font-size: 18px;
-    border: 1px solid silver;
-    outline: none;
-    padding: 0 20px;
-    border-radius: 30px;
-    color: black;
-    transition: all 0.6s ease;
-}
-
-.boton_buscador a i{
-    font-size: 30px;
-    color: white;
-}
-
- .boton_buscador{
     position: relative;
-    left: -45px;
-    background: #0B2447;
-    width: 50px;
-    height: 50px;
-    line-height: 55px;
-    text-align: center;
-    font-size: 20px;
-    color: white;
-    border-radius: 50%;
-    cursor: pointer;
 }
 
+.topbar button a{
+    color: white;
+    text-decoration: none;
+    font-family: 'Lilita One', sans-serif;
+}
+
+/*Esto es el boton del buscador*/
+.buscar {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: relative;
+}
+
+.buscar input {
+  background-color: #FFFF;
+  width: 0;
+  height: 40px;
+  font-size: 18px;
+  border: 1px solid silver;
+  outline: none;
+  padding: 0 20px;
+  border-radius: 30px;
+  color: black;
+  transition: all 0.6s ease;
+}
+
+.boton_buscador {
+  position: absolute;
+  top: 0;
+  right: -5px;
+  background: #0B2447;
+  width: 50px;
+  height: 50px;
+  line-height: 55px;
+  text-align: center;
+  font-size: 20px;
+  color: white;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.boton_buscador a i {
+  font-size: 30px;
+  color: white;
+}
+
+/*Animación del boton del buscador*/
 .buscar:hover input{
-    width: 240px;
-} 
+  width: 240px;
+}
 
 /*Esto es la parte del titulo y subtitulo*/
 #hola{
@@ -231,7 +240,6 @@ body {
     list-style: none;
     padding: 50px 0 0 0;
     margin: 0 0 0 40px;
-    text-align: left;
   }
 
   .lista_principal li{
@@ -248,6 +256,7 @@ body {
     transition: 0.4s;
 }
 
+/*Animación del nav del menú del filtro*/
 .lista_principal li:hover{
     background-color: #19A7CE;
 }
@@ -397,17 +406,21 @@ body {
     font-weight: 100;
 }
 
-#search_advance, #search_advance a{
-    width: 25%;
-    height: 40px;
-    color: white;
+#search_advance{
     background-color: #19A7CE;
+    border: none;
     border-radius: 10px;
+    padding: 10px 20px;
+    margin: 20px;
     text-decoration: none;
-    font-size: 20px;
 }
 
+#search_advance a{
+    color: white;
+    text-decoration: none;
+}
 
+/*Aqui comienza la parte principal de la pagina*/
 /*Seccion 1 - Ofertas*/
 .ofertas{
     width: 100%;
@@ -416,7 +429,7 @@ body {
     margin: 20px 0 0 0;
 }
 
-/*banner 1*/
+/*Banner 1*/
 .seccion_ofertas_banner1{
     background-image: url(./media/image_banner_1.jpg);
     background-size: cover;
@@ -456,7 +469,6 @@ body {
     color: white;
 }
 
-
 .see_deals{
     height: auto;
     margin: 60px 20px;
@@ -470,12 +482,6 @@ body {
     border-radius: 10px 10px 10px 10px;
     color: white;
     transition: 0.5s;
-}
-
-/* animacion hover */
-.see_deals a:hover{
-    background-color: white;
-    color: #0B2447;
 }
 
 /*Banner 2*/
@@ -530,6 +536,12 @@ body {
     color: white;
 }
 
+/*Animacioón hover de todos los banner*/
+.see_deals a:hover{
+    background-color: white;
+    color: #0B2447;
+}
+
 /*Seccion 2 - Top destinations*/
 /* titulo */
 #top_destinations_titulo{
@@ -573,11 +585,13 @@ body {
     z-index: 1;
 }
 
-.info_tarjetas{
-    font-size: 20px;
+.info_tarjetas h3>a{
+    font-size: 30px;
+    color: white;
+    text-decoration: none;
 }
 
-.tarjetas .info_tarjetas a{
+.info_tarjetas a:not(h3 > a){
     font-size: 21px;
     color: white;
     text-decoration: none;
@@ -590,6 +604,7 @@ body {
     transition: 0.7s;
 }
 
+/*Animación de las tarjetas*/
 .tarjetas img:hover{
     transform: scale(1.2);
 }
@@ -604,6 +619,7 @@ body {
     height: 150px;
 }
 
+/*Lado izquierdo*/
 .zona_registro_izq{
     align-items: center;
     display: flex;
@@ -619,10 +635,10 @@ body {
     margin: 0;
 }
 
+/*Esto es del lado derecho*/
 .registro_der{
     align-items: center;
     display: flex;
-    padding: 0 100px;
 }
 
 form{
@@ -661,12 +677,15 @@ form{
     margin: 0 20px;
 }
 
+/*Animación del hover de suscribe*/
 .registro_der #boton:hover{
     background-color: #0B2447;
     color: white;
 }
 
 /* ----- Footer parte 2 ------ */
+
+/*Esto es general*/
 .footer_parte_2{
     background-color: white;
     display: flex;
@@ -709,7 +728,7 @@ form{
     margin-bottom: 25px;
 }
 
-/* seccion 1 */
+/* seccion 1 - Need help?*/
 .footer_parte_2 .seccion_1{
     align-items: center;
     width: 200px;
@@ -733,17 +752,18 @@ form{
     margin: 0 0 15px 0;
 }
 
+/*Iconos de las redes sociales*/
 .seccion_1 a i{
     font-size: 40px;
     margin: 0 10px;
     color: #2C3639;
     transition: 0.5s;
 }
-
+/*Animación de los iconos*/
 .seccion_1 a i:hover{
     transform: scale(1.4);
 }
-/* seccion 2 */
+/* seccion 2 - Company */
 .footer_parte_2 .seccion_2{
     align-items: center;
     width: 200px;
@@ -751,7 +771,7 @@ form{
     padding: 25px 25px;
 }
 
-/* seccion 3 */
+/* seccion 3 - Company*/
 .footer_parte_2 .seccion_3{
     align-items: center;
     width: 200px;
@@ -760,7 +780,7 @@ form{
     
 }
 
-/* seccion 4 */
+/* seccion 4 - Settings*/
 .footer_parte_2 .seccion_4{
     align-items: center; 
     text-align: left;
@@ -787,10 +807,7 @@ form{
     height: 60px;
 }
 
-.tarjetas_der{
-    padding: 0 50px;
-}
-
+/*Esto es del lado derecho, aviso de copyright*/
 .parrafo_izq {
     display: flex;
     padding: 0 50px;
@@ -801,6 +818,13 @@ form{
     text-decoration: none;
 }
 
+/*Tarjetas de banco del lado derecho*/
+.tarjetas_der{
+    padding: 0 50px;
+}
+
+
+/*Esto es de los iconos de las tarjetas de credito*/
 .tarjetas_der img{
     width: 40px;
 }

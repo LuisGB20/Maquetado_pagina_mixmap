@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,27 +7,24 @@
     <title>Home page - MixMap</title>
     <link rel="stylesheet" href="./style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@500&family=Oswald:wght@300&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@500&family=Oswald:wght@300&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Lilita+One&family=Nunito:wght@500&family=Oswald:wght@300&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lilita+One&family=Nunito:wght@500&family=Oswald:wght@300&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/51f01fa855.js" crossorigin="anonymous"></script>
 </head>
-
 <body>
     <header>
+        <!-- Esta es la barra de navegación donde estan las redes sociales y registro/inicio de sesion -->
         <section class="barra_navegacion">
-            <!--Barra de navegacion parte izquierda-->
+            <!--Barra de navegación parte izquierda-->
             <nav class="nav_izq">
                 <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
                 <a href="#"><i class="fa-brands fa-instagram"></i></a>
                 <a href="#"><i class="fa-brands fa-youtube"></i></a>
                 <a href=" mailto:luisalbertogomezbroca@gmail.com">luisalbertogomezbroca@gmail.com</a>
             </nav>
-            <!--Barra de navegacion parte derecha-->
+            <!--Barra de navegación parte derecha-->
             <nav class="nav_der">
                 <ul>
                     <li><a href="">998-705-3603</a></li>
@@ -45,57 +41,32 @@
                 </ul>
             </nav>
         </section>
-        <!--Menú principal del header-->
+        <!--Menú principal header-->
         <section class="menu_header">
             <!--Este es el logo-->
             <div class="topbar">
                 <a href="#"><img id="logo_1" src="./media/mix_logo.svg" alt="Logo de la pagina"></a>
+                <!--Esta es la lista de opciones-->
                 <ul class="topbar_list">
                     <li><a href="#">Home</a></li>
                     <li><a href="#">Hotel</a>
-                        <ul>
-                            <li><a href="#">Mas populares</a></li>
-                            <li><a href="#">Mejor calificados</a></li>
-                            <li><a href="#">Mejor precio</a></li>
-                        </ul>
                     </li>
                     <li><a href="">Tour</a>
-                        <ul>
-                            <li><a href="#">Mas populares</a></li>
-                            <li><a href="#">Mejor calificados</a></li>
-                            <li><a href="#">Mejor precio</a></li>
-                        </ul>
                     </li>
                     <li><a href="">Activity</a>
-                        <ul>
-                            <li><a href="#">Mas populares</a></li>
-                            <li><a href="#">Mejor calificados</a></li>
-                            <li><a href="#">Mejor precio</a></li>
-                        </ul>
                     </li>
                     <li><a href="">Rental</a>
-                        <ul>
-                            <li><a href="#">Mas populares</a></li>
-                            <li><a href="#">Mejor calificados</a></li>
-                            <li><a href="#">Mejor precio</a></li>
-                        </ul>
                     </li>
                     <li><a href="">Car</a>
-                        <ul>
-                            <li><a href="#">Mas populares</a></li>
-                            <li><a href="#">Mejor calificados</a></li>
-                            <li><a href="#">Mejor precio</a></li>
-                        </ul>
                     </li>
                     <li><a href="">Pages</a>
-                        <ul>
-                            <li><a href="#">Mas populares</a></li>
-                            <li><a href="#">Mejor calificados</a></li>
-                            <li><a href="#">Mejor precio</a></li>
-                        </ul>
                     </li>
                 </ul>
+                <!--Bolsita de compras-->
                 <a href="#" id="bolsa_compras"><i class="fa-solid fa-bag-shopping"></i></a>
+                <!--Boton become local expert-->
+                <button><a href="#">Become Local Expert</a></button>
+                <!--Este es el div del buscador-->
                 <div class="buscar">
                     <input type="text" placeholder="Buscar">
                     <div class="boton_buscador">
@@ -106,7 +77,7 @@
             <!--Titulo y bienvenida-->
             <h1 id="hola">Hi There!</h1>
             <h2 id="pregunta_eslogan">Where would you like to go?</h2>
-            <!--Nav del menu central de filtros-->
+            <!--Barra de navegación del menu de filtros-->
             <div class="barra_busqueda">
                 <ul class="lista_principal">
                     <li><a href="">Hotel</a></li>
@@ -117,8 +88,9 @@
                     <li><a href="">Transfercar</a></li>
                 </ul>
             </div>
-            <!--Menu central de filtros-->
+            <!--Menú central de filtros-->
             <div class="menu_central">
+                <!--Div de destinos-->
                 <div class="destination">
                     <i class="fa-solid fa-location-dot"></i>
                     <div class="destination_info">
@@ -126,6 +98,7 @@
                         <p>Where are you going?</p>
                     </div>
                 </div>
+                <!--Div del check-->
                 <div class="check">
                     <i class="fa-regular fa-calendar"></i>
                     <div class="check_info">
@@ -133,6 +106,7 @@
                         <p>dd/mm/yyyy - dd/mm/yyyy</p>
                     </div>
                 </div>
+                <!--Div del guests-->
                 <div class="guests">
                     <i class="fa-solid fa-users"></i>
                     <div class="guests_info">
@@ -140,6 +114,7 @@
                         <p>1 Adult - 0 Children</p>
                     </div>
                 </div>
+                <!--Div de advance-->
                 <div class="advance">
                     <div class="advance_info">
                         <h4>Advance</h4>
@@ -150,20 +125,24 @@
             </div>
         </section>
     </header>
+    <!--Comienza el contenido central-->
     <!--Seccion 1 - Ofertas-->
     <section class="ofertas">
+        <!--Oferta 1-->
         <div class="seccion_ofertas_banner1">
             <h2 class="titulo"><a href="#">Holiday sale</a></h2>
             <h2>Special Offers</h2>
             <p>Find Your Perfect Hotels Get the best prices on 20,000+ properties the best prices on</p>
             <h3 class="see_deals"><a href="#">See deals</a></h3>
         </div>
+        <!--Oferta 2-->
         <div class="seccion_ofertas_banner2">
             <h2 class="titulo"><a href="#">Holiday sale</a></h2>
             <h2>Newsletters</h2>
             <p>Join for free and get our tailored newsletters full of hot travel deals.</p>
             <h3 class="see_deals"><a href="#">Sign up</a></h3>
         </div>
+        <!--Oferta 3-->
         <div class="seccion_ofertas_banner3">
             <h2 class="titulo"><a href="#">Holiday sale</a></h2>
             <h2>Special Offers</h2>
@@ -176,18 +155,20 @@
     <h1 id="top_destinations_titulo">Top Destinations</h1>
     <!--Tarjetas-->
     <section class="tarjetas-container">
+        <!--Tarjeta 1-->
         <div class="tarjetas">
             <div class="info_tarjetas">
-                <h3><a href="#" class="titulo_tarjetas">New Jersey</a></h3>
+                <h3><a href="#">New Jersey</a></h3>
                 <a href="#">&bull; 21 Activities</a>
                 <a href="#">&bull; 15 Cars</a>
                 <a href="#">&bull; 20 Hotels</a>
                 <a href="#">&bull; 19 Rentals</a>
                 <a href="#">&bull; 21 Tours</a>
             </div>
-            <img src="./media/new jersey.jpg">
+            <img src="./media/new jersey.jpg">      <!--Imagen de fondo-->
         </div>
         <div class="tarjetas">
+            <!--Tarjeta 2-->
             <div class="info_tarjetas">
                 <h3><a href="#" class="titulo_tarjetas">New York City</a></h3>
                 <a href="#">&bull; 21 Activities</a>
@@ -196,9 +177,10 @@
                 <a href="#">&bull; 19 Rentals</a>
                 <a href="#">&bull; 22 Tours</a>
             </div>
-            <img src="./media/new york.jpg">
+            <img src="./media/new york.jpg">        <!--Imagen de fondo-->
         </div>
         <div class="tarjetas">
+            <!--Tarjeta 3-->
             <div class="info_tarjetas">
                 <h3><a href="#" class="titulo_tarjetas">Los Angeles</a></h3>
                 <a href="#">&bull; 21 Activities</a>
@@ -207,9 +189,10 @@
                 <a href="#">&bull; 19 Rentals</a>
                 <a href="#">&bull; 21 Tours</a>
             </div>
-            <img src="./media/los angeles.jpg">
+            <img src="./media/los angeles.jpg">     <!--Imagen de fondo-->
         </div>
         <div class="tarjetas">
+            <!--Tarjeta 4-->
             <div class="info_tarjetas">
                 <h3><a href="#" class="titulo_tarjetas">Philadelphia</a></h3>
                 <a href="#">&bull; 21 Activities</a>
@@ -218,9 +201,10 @@
                 <a href="#">&bull; 20 Rentals</a>
                 <a href="#">&bull; 21 Tours</a>
             </div>
-            <img src="./media/philadelphia.jpg">
+            <img src="./media/philadelphia.jpg">        <!--Imagen de fondo-->
         </div>
         <div class="tarjetas">
+            <!--Tarjeta 5-->
             <div class="info_tarjetas">
                 <h3><a href="#" class="titulo_tarjetas">Wilmington</a></h3>
                 <a href="#">&bull; 21 Activities</a>
@@ -229,9 +213,10 @@
                 <a href="#">&bull; 19 Rentals</a>
                 <a href="#">&bull; 21 Tours</a>
             </div>
-            <img src="./media/wilmington.jpg">
+            <img src="./media/wilmington.jpg">      <!--Imagen de fondo-->
         </div>
         <div class="tarjetas">
+            <!--Tarjeta 6-->
             <div class="info_tarjetas">
                 <h3><a href="#">California</a></h3>
                 <a href="#">&bull; 21 Activities</a>
@@ -240,17 +225,14 @@
                 <a href="#">&bull; 19 Rentals</a>
                 <a href="#">&bull; 21 Tours</a>
             </div>
-            <img src="./media/california.jpg">
+            <img src="./media/california.jpg">              <!--Imagen de fondo-->
         </div>
-
     </section>
-
-
-
     <!-- footer -->
     <footer>
         <!-- footer parte 1 -->
         <section class="footer_parte_1">
+            <!--Div de la izquierda - icono y texto de suscripción-->
             <div class="zona_registro_izq">
                 <i class="fa-regular fa-envelope"></i>
                 <div class="texto">
@@ -258,6 +240,7 @@
                     <p>Thoughtful thoughts to your inbox</p>
                 </div>
             </div>
+            <!--Div de la derecha - input de suscripción de correo-->
             <div class="registro_der">
                 <form>
                     <input id="registro" type="text" placeholder="Your email">
@@ -267,30 +250,30 @@
         </section>
         <!-- footer parte 2 -->
         <section class="footer_parte_2">
-            <!-- seccion 1 -->
+            <!-- seccion 1 - Need help?-->
             <div class="seccion_1">
                 <h3>NEED HELP?</h3>
                 <h4>Call Us</h4>
-                <p><a href="">+52 998-705-3603</a></p>
+                <p><a href="#">+52 998-705-3603</a></p>
                 <h4>Email for Us</h4>
                 <p><a href="mailto:luisalbertogomezbroca@gmail.com">luisalbertogomezbroca@gmail.com</a></p>
                 <h4>Follow Us</h4>
-                <a href=""><i class="fa-brands fa-square-facebook"></i></a>
-                <a href=""><i class="fa-brands fa-instagram"></i></a>
-                <a href=""><i class="fa-brands fa-youtube"></i></a>
+                <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-youtube"></i></a>
             </div>
-            <!-- seccion 2 -->
+            <!-- seccion 2 - Company-->
             <div class="seccion_2">
                 <h3>COMPANY</h3>
                 <ul>
-                    <li><a href="">About Us</a></li>
-                    <li><a href="">Community Blog</a></li>
-                    <li><a href="">Rewards</a></li>
-                    <li><a href="">Work with Us</a></li>
-                    <li><a href="">Meet the Team</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Community Blog</a></li>
+                    <li><a href="#">Rewards</a></li>
+                    <li><a href="#">Work with Us</a></li>
+                    <li><a href="#">Meet the Team</a></li>
                 </ul>
             </div>
-            <!-- seccion 3 -->
+            <!-- seccion 3 - Company-->
             <div class="seccion_3">
                 <h3>COMPANY</h3>
                 <ul>
@@ -300,7 +283,7 @@
                     <li><a href="">Privacy Policy</a></li>
                 </ul>
             </div>
-            <!-- seccion 4 -->
+            <!-- seccion 4 - Settings-->
             <div class="seccion_4">
                 <h3>SETTINGS</h3>
                 <ul>
@@ -316,7 +299,9 @@
         </section>
         <!-- footer parte 3 -->
         <section class="footer_parte_3">
+            <!--Aviso de copyright-->
             <p class="parrafo_izq"> <b>Copyright © 2023 <a href="#">Luis Broca</a></b></p>
+            <!--Div de las tarjetas de banco-->
             <div class="tarjetas_der">
                 <img src="./media/cc-mastercard.svg" alt="">
                 <img src="./media/cc-paypal.svg" alt="">
@@ -325,5 +310,4 @@
         </section>
     </footer>
 </body>
-
 </html>
